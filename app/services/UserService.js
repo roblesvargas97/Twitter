@@ -9,6 +9,10 @@ class UserService {
     const { id, userName, name, bio } = user;
     return [id, userName, name, bio];
   }
+
+  static updateUsername(user, newName) {
+    return (user.userName = newName);
+  }
 }
 
 module.exports = UserService;
