@@ -16,17 +16,17 @@ describe("Unit Test for user class", () => {
     expect(user.lastUpdated).not.toBeUndefined();
   });
 
-  test('Add Getters', () => {
+  test("Add Getters", () => {
     const user = new User(
-        1,
-        "roblesvargas",
-        "Jesus Uriel Robles Vargas",
-        "Bio"
-      );
+      1,
+      "roblesvargas",
+      "Jesus Uriel Robles Vargas",
+      "Bio"
+    );
 
-      expect(user.getName()).toBe("Jesus Uriel Robles Vargas");
-      expect(user.getBio()).toBe("Bio");
-      expect(user.getDateCreated()).not.toBeUndefined();
-      expect(user.getLastUpdated()).not.toBeUndefined();
+    expect(user.getName).toBe("Jesus Uriel Robles Vargas");
+    expect(user.getBio).toBe("Bio");
+    expect(user.getDateCreated).not.toBeUndefined();
+    expect(user.getLastUpdated).not.toBeUndefined();
   });
 });
