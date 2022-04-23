@@ -19,6 +19,11 @@ class UserView {
         error: "necesitan tener las propiedades adecuadas",
       };
     }
+    return {
+      username: payload.username,
+      name: payload.name,
+      id: payload.id,
+    };
   }
 }
 
