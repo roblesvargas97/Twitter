@@ -5,6 +5,11 @@ class UserView {
         error: "payload no existe",
       };
     }
+    if (payload.username === null || payload.name === null || id === null) {
+      return {
+        error: "necesitan tener un valor valido",
+      };
+    }
   }
 }
 
